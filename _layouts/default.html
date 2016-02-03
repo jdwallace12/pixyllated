@@ -15,15 +15,16 @@
 	{% endif %}
 
   <div class="site-wrap">
-    {% include header.html %}
+
 
     <div class="post p2 p-responsive wrap" style="display: flex; flex-direction:row;" role="main">
      <div class="sidebar" style="    
        width: 15%;
     margin-right: 2%;
-    height:100vh;
-    padding: 5%;">
-     	<div style="position:fixed;background:#ffffff;">
+    height:100vh;">
+    <a href="/pixyll/">Home</a>
+
+     	<div style="position:fixed;background:#ffffff;padding: 2%;">
      	<div class="ui fluid accordion" id="blog-filter">
   {% for category in site.categories %}
     <div class="title filter" data-filter=".{{ category | first }}">
