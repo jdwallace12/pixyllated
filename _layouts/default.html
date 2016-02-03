@@ -17,13 +17,48 @@
   <div class="site-wrap">
     {% include header.html %}
 
-    <div class="post p2 p-responsive wrap" role="main">
-      <div class="measure">
+    <div class="post p2 p-responsive wrap" style="display: flex; flex-direction:row;" role="main">
+     <div class="sidebar" style="    
+       width: 15%;
+    margin-right: 2%;
+    height:100vh;
+    padding: 5%;">
+     	<div style="position:fixed;background:#ffffff;">
+     	<div class="ui fluid accordion" id="blog-filter">
+  {% for category in site.categories %}
+    <div class="title filter" data-filter=".{{ category | first }}">
+        <i class="dropdown icon"></i>
+        <h3 style="display:inline-block; text-transform: capitalize;">{{ category | first }}</h3>
+    </div>
+    <div class="content inner">
+      {% for posts in category %}
+        {% for post in posts %}
+          {% if post.url %}
+        
+                <a class="header" href="/pixyll/{{ post.url }}">{{ post.title }}</a>
+                <div class="description">{{ post.date | date: "%b %-d, %Y" }}</div>
+         
+         {% endif %} 
+        {% endfor %}
+      {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+     </div>
+   </div>
+      <div class="measure" style="width:85%; margin:0;">
         {{ content }}
       </div>
     </div>
   </div>
 
   {% include footer.html %}
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$('#blog-filter').accordion();	
+	});
+</script>
 </body>
 </html>
+
