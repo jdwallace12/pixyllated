@@ -40,6 +40,11 @@
 			        $('.ui.sidebar').sidebar('toggle');
 			        $('.burg').toggleClass('activeBurg');
 			    });
+			     $('.ui.sidebar').sidebar({
+			     		onHide: function () {
+			     			 $('.burg').toggleClass('activeBurg');
+			     		}
+			     });
 			});
 			</script>
     </div>
