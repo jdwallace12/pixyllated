@@ -58,7 +58,8 @@
   position: fixed;
   @media (max-width: 885px) {
     position: absolute;
-    
+    top: 0px;
+
   }
   color: none;
   &:hover {
