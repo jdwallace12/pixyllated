@@ -89,6 +89,12 @@
 
 .sidebar {
     background: #ffffff;
+       a {
+             background: none;
+                text-decoration: none;
+                text-shadow: none;
+                color: none;
+              }
     .content.inner {
         font-size: .8rem;
         line-height: 1.5;
