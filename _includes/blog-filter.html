@@ -6,8 +6,8 @@
     </div>
     <div class="content inner">
         {% for posts in category %} {% for post in posts %} {% if post.url %}
-        <a class="header" href="/pixyll/{{ post.url }}">{{ post.title }}</a>
-        <div class="description">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <h6><a class="header" href="/pixyll/{{ post.url }}">{{ post.title }}</a></h6>
+        <div class="description" style="margin-top:-10px;">{{ post.date | date: "%b %-d, %Y" }}</div>
         {% endif %} {% endfor %} {% endfor %}
     </div>
     {% endfor %}

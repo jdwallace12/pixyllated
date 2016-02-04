@@ -56,6 +56,10 @@
   background: none;
   text-shadow: none;
   position: fixed;
+  @media (max-width: 885px) {
+    position: absolute;
+    
+  }
   color: none;
   &:hover {
     background: none;
@@ -85,6 +89,11 @@
 
 .sidebar {
   background: #ffffff;
+  .content.inner {
+    font-size: .8rem;
+    line-height: 1.5;
+    margin-top: -20px;
+  }
 }
 .sidebar-container {
   padding: 20px;
