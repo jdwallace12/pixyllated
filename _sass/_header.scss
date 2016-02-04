@@ -56,16 +56,17 @@
     background: none;
     text-shadow: none;
     position: fixed;
+    transition: all .3s ease;
     @media (max-width: 885px) {
         position: absolute;
         top: 0px;
     }
     color: none;
     &:hover {
+      transform: scale(1.1);
         background: none;
         text-decoration: none;
-        text-shadow: none;
-        color: none;
+        
     }
     &:active {
         background: none;
