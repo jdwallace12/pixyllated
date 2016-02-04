@@ -48,3 +48,92 @@
 .site-header .site-nav {
   text-align: center;
 }
+
+.burgWrapper {
+  padding: 20px 0;
+  display: block;
+  text-decoration: none;
+  background: none;
+  text-shadow: none;
+  position: fixed;
+  z-index: 9999;
+  color: none;
+  &:hover {
+    background: none;
+    text-decoration: none;
+      text-shadow: none;
+        color: none;
+  }
+   &:active {
+    background: none;
+    text-decoration: none;
+      text-shadow: none;
+        color: none;
+  }
+     &:visited {
+    background: none;
+    text-decoration: none;
+      text-shadow: none;
+        color: none;
+  }
+     &:focus {
+    background: none;
+    text-decoration: none;
+      text-shadow: none;
+        color: none;
+  }
+}
+
+.sidebar {
+  background: #ffffff;
+}
+
+.burg {
+  display: block;
+  height: 5px;
+  width: 30px;
+  background: black;
+  position: relative;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.burg:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  height: 5px;
+  background: #000;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.burg:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 5px;
+  background: #000;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.activeBurg {
+  background: transparent;
+  background: none;
+  text-decoration: none;
+}
+.activeBurg:before {
+  -webkit-transform: rotate(45deg);
+  top: 0;
+}
+.activeBurg:after {
+  -webkit-transform: rotate(-45deg);
+  top: 0;
+}
