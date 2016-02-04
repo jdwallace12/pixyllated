@@ -36,10 +36,12 @@
 			  <script>
 			$(document).ready(function() {
 			    $('#blog-filter').accordion();
+			    
 			    $('.burgWrapper').on('click', function() {
 			        $('.ui.sidebar').sidebar('toggle');
 			        $('.burg').toggleClass('activeBurg');
 			    });
+			     
 			     $('.ui.sidebar').sidebar({
 			     		onHide: function () {
 			     			 $('.burg').toggleClass('activeBurg');
