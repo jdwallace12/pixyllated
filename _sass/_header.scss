@@ -94,6 +94,10 @@
         line-height: 1.5;
         margin-top: -20px;
         a {
+             background: none;
+                text-decoration: none;
+                text-shadow: none;
+                color: none;
             &:hover {
                 background: none;
                 text-decoration: none;
