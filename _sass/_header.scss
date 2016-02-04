@@ -1,150 +1,181 @@
 .site-header {
-  padding-top: $space-1;
-  padding-bottom: $space-2;
+    padding-top: $space-1;
+    padding-bottom: $space-2;
 }
 
 .site-header a {
-  color: #333;
-  font-size: $h3;
-  font-weight: 300;
-  background-image: none;
+    color: #333;
+    font-size: $h3;
+    font-weight: 300;
+    background-image: none;
 }
 
 .site-header .site-title {
-  font-size: $h2;
+    font-size: $h2;
 }
 
 .site-nav {
-  margin-top: $space-2;
+    margin-top: $space-2;
 }
 
 .site-header nav a {
-  color: #666;
+    color: #666;
 }
 
 .site-header nav a:hover,
 .site-header nav a:focus,
 .site-header nav a:active {
-  color: #444;
-  opacity: 1;
-  border-bottom: 2px solid #444;
+    color: #444;
+    opacity: 1;
+    border-bottom: 2px solid #444;
 }
 
 .site-nav a + a {
-  margin-left: 1em;
+    margin-left: 1em;
 }
 
 .site-header a:hover,
 .posts .post a:hover .post-meta,
 .posts .post a:hover .post-title,
 .posts .post a:hover .post-summary {
-  opacity: 0.88;
+    opacity: 0.88;
 }
 
 .site-header {
-  text-align: center;
+    text-align: center;
 }
 
 .site-header .site-nav {
-  text-align: center;
+    text-align: center;
 }
 
 .burgWrapper {
-  padding: 20px 0;
-  display: block;
-  text-decoration: none;
-  background: none;
-  text-shadow: none;
-  position: fixed;
-  @media (max-width: 885px) {
-    position: absolute;
-    top: 0px;
-
-  }
-  color: none;
-  &:hover {
-    background: none;
+    padding: 20px 0;
+    display: block;
     text-decoration: none;
-      text-shadow: none;
-        color: none;
-  }
-   &:active {
     background: none;
-    text-decoration: none;
-      text-shadow: none;
+    text-shadow: none;
+    position: fixed;
+    @media (max-width: 885px) {
+        position: absolute;
+        top: 0px;
+    }
+    color: none;
+    &:hover {
+        background: none;
+        text-decoration: none;
+        text-shadow: none;
         color: none;
-  }
-     &:visited {
-    background: none;
-    text-decoration: none;
-      text-shadow: none;
+    }
+    &:active {
+        background: none;
+        text-decoration: none;
+        text-shadow: none;
         color: none;
-  }
-     &:focus {
-    background: none;
-    text-decoration: none;
-      text-shadow: none;
+    }
+    &:visited {
+        background: none;
+        text-decoration: none;
+        text-shadow: none;
         color: none;
-  }
+    }
+    &:focus {
+        background: none;
+        text-decoration: none;
+        text-shadow: none;
+        color: none;
+    }
 }
 
 .sidebar {
-  background: #ffffff;
-  .content.inner {
-    font-size: .8rem;
-    line-height: 1.5;
-    margin-top: -20px;
-  }
+    background: #ffffff;
+    .content.inner {
+        font-size: .8rem;
+        line-height: 1.5;
+        margin-top: -20px;
+        a {
+            &:hover {
+                background: none;
+                text-decoration: none;
+                text-shadow: none;
+                color: none;
+            }
+            &:active {
+                background: none;
+                text-decoration: none;
+                text-shadow: none;
+                color: none;
+            }
+            &:visited {
+                background: none;
+                text-decoration: none;
+                text-shadow: none;
+
+            }
+            &:focus {
+                background: none;
+                text-decoration: none;
+                text-shadow: none;
+
+            }
+        }
+    }
 }
+
 .sidebar-container {
-  padding: 20px;
+    padding: 20px;
 }
+
 .burg {
-  display: block;
-  height: 5px;
-  width: 30px;
-  background: black;
-  position: relative;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+    display: block;
+    height: 5px;
+    width: 30px;
+    background: black;
+    position: relative;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
+
 .burg:before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  width: 30px;
-  height: 5px;
-  background: #000;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 5px;
+    background: #000;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
+
 .burg:after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  width: 30px;
-  height: 5px;
-  background: #000;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 5px;
+    background: #000;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .activeBurg {
-  background: transparent;
-  background: none;
-  text-decoration: none;
+    background: transparent;
+    background: none;
+    text-decoration: none;
 }
+
 .activeBurg:before {
-  -webkit-transform: rotate(45deg);
-  top: 0;
+    -webkit-transform: rotate(45deg);
+    top: 0;
 }
+
 .activeBurg:after {
-  -webkit-transform: rotate(-45deg);
-  top: 0;
+    -webkit-transform: rotate(-45deg);
+    top: 0;
 }

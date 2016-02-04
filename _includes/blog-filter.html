@@ -5,10 +5,19 @@
         <h6 style="display:inline-block; text-transform: capitalize;">{{ category | first }}</h6>
     </div>
     <div class="content inner">
+         <div class="ui list">
         {% for posts in category %} {% for post in posts %} {% if post.url %}
-        <h6><a class="header" href="/pixyll/{{ post.url }}">{{ post.title }}</a></h6>
-        <div class="description" style="margin-top:-10px;">{{ post.date | date: "%b %-d, %Y" }}</div>
+
+  <div class="item">
+    <div class="content">
+      <h6><a class="header" href="/pixyll/{{ post.url }}">{{ post.title }}</a></h6>
+      <div class="description">{{ post.date | date: "%b %-d, %Y" }}</div>
+    </div>
+  </div>
+
         {% endif %} {% endfor %} {% endfor %}
+    </div>
     </div>
     {% endfor %}
 </div>
+
