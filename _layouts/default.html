@@ -16,20 +16,13 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
     {% endif %}
-    <div class="ui sidebar vertical menu">
-    	<div class="sidebar-container">
-    	<a href="/pixyll/"><i class="ui large home icon"></i><h6>Home</h6></a>
-    	<hr>
-    	<h3>Categories</h3>
-    	{% include blog-filter.html %}
-    </div>
-    </div>
+ {% include sidebar.html %}
     <div class="pusher" id="dimmer">
         <div class="site-wrap">
             <div class="post p2 p-responsive wrap" role="main">
-                <a class="burgWrapper" href="##">
+                <span class="burgWrapper" href="##" style="cursor:pointer;">
                     <div class="burg"></div>
-                </a>
+                </span>
                 <div class="measure">
                     {{ content }}
                 </div>
@@ -37,22 +30,22 @@
         </div>
         {% include footer.html %}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
-			  <script>
-			$(document).ready(function() {
-			    $('#blog-filter').accordion();
-			    
-			    $('.burgWrapper').on('click', function() {
-			        $('.ui.sidebar').sidebar('toggle');
-			        $('.burg').toggleClass('activeBurg');
-			    });
-			     
-			     $('.ui.sidebar').sidebar({
-			     		onHide: function () {
-			     			 $('.burg').toggleClass('activeBurg');
-			     		}
-			     });
-			});
-			</script>
+        <script>
+        $(document).ready(function() {
+            $('#blog-filter').accordion();
+
+            $('.burgWrapper').on('click', function() {
+                $('.ui.sidebar').sidebar('toggle');
+                $('.burg').toggleClass('activeBurg');
+            });
+
+            $('.ui.sidebar').sidebar({
+                onHide: function() {
+                    $('.burg').toggleClass('activeBurg');
+                }
+            });
+        });
+        </script>
     </div>
 </body>
 
