@@ -1,15 +1,27 @@
 <div class="ui right sidebar vertical menu">
     <div class="sidebar-container">
         <a class="green item" href="/pixyll/">
-            <i class="home blue icon"></i>Home
+            <i class="home icon"></i>Home
         </a>
         <a class="item" href="#">
-            <i class="video envelope blue icon"></i>Contact
+            <i class="video envelope icon"></i>Contact
         </a>
         <div class="ui horizontal divider">
             <h6>Categories</h6>
         </div>
         {% include blog-filter.html %}
-        <div class="ui horizontal divider"><h6>Most Popular</h6></div>
+        <div class="ui horizontal divider">
+            <h6>Most Recent</h6></div>
+        <div class="ui list">
+            {% for post in site.posts limit:2 %}
+            <div class="item">
+                <div class="content">
+                    <h6><a class="header" href="/pixyll/{{ post.url }}">{{ post.title }}</a></h6>
+                    <div class="description">{{ post.date | date: "%b %-d, %Y" }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="ui divider"></div>
     </div>
 </div>
