@@ -20,7 +20,7 @@ I have a standing desk at the office but since I have started working from home 
  
  *I start the morning standing and by lunch time my computer is low on batteries and place it on my other desk with my monitor to charge during lunch.  In the afternoon, I sit at my normal desk while my battery finishes charging and once fully charged, I resume standing and repeat this process throughout the day.*
 
-##Construction
+<h2>Construction</h2>
 I went out to Home Depot and pieced every thing together in my head while in the closet aisle.  I grabbed two 30 inch metal tracks, two 12 inch shelving brackets, two 8 inch shelving brackets and 3 foot long corresponding shelves.  With all the hardware, shelving system, and an anti-fatigue mat to stand on while at the desk, my total was $60.
 
 I measured the distance from my elbow to the ground when my arm was at a 90 degree angle and figured that would be the height where the first shelf should be hung.  I calculated where the same height would be on the wall and attached the first shelving track starting about 6 inches below that point where the first shelf would hang.  Using a long level, I was easily able to find the next spot on the wall about 28 inches from the first track to mount the second track.  Checking again that the span from each track was level, it was a matter of inserting the shelving brackets, laying and then securing the shelves to the brackets.  I played  around with the locations of the shelves finding the optimal height of each shelf before securing.
