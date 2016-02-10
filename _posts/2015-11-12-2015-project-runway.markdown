@@ -9,7 +9,7 @@ featured-image: http://24.media.tumblr.com/b0f61c6e26906f0de4b8b87d717bcc2a/tumb
 thumbnail-image: http://24.media.tumblr.com/b0f61c6e26906f0de4b8b87d717bcc2a/tumblr_n3es6ippW81smcbm7o1_500.gif
 comments: true
 author: John Wallace
-author-image: /images/john-wallace.jpg
+author-image: http://jdwallace12.github.io/images/john-wallace.jpg
 author-bio: I love playing outside, fort building, and skiing powder with my wife and dog.  Currently a front end devloper at AppNeta.
 ---
 With years of being subjected to crappy and/or “girly” television shows, due to my wife holding the remote with more gusto than I do, I have learned to actually enjoy some of the shows that I would otherwise never watch.   One of the shows I have learned to appreciate is Project Runway – a Lifetime reality show that chronicles 16 designers with “a passion for fashion”, all of whom are competing to win the grand prize. Coming from a web design/development background, I found myself easily relating to all the fashion designers battling it out on the show.  Creating something from nothing is a common “thread” between both fields and they share similar processes and pitfalls.

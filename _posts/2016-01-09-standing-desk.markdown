@@ -5,8 +5,8 @@ subtitle: Building a standing desk
 description: Sitting all day can put a lot of strain on your body and there are numerous studies showing the negative affects on the body.  I have also heard of studies claiming the opposite and claiming that standing can causing stress to your legs and is worst than sitting. 
 date:   2016-01-9 20:08:05
 categories: furniture
-featured-image: /images/standing-desk-featured.jpg
-thumbnail-image: /images/standing-desk-1-small.jpg
+featured-image: http://jdwallace12.github.io/images/standing-desk-featured.jpg
+thumbnail-image: http://jdwallace12.github.io/images/standing-desk-1-small.jpg
 comments: true
 author: John Wallace
 author-image: /images/john-wallace.jpg
@@ -16,7 +16,7 @@ Sitting all day can put a lot of strain on your body and there are numerous stud
 
 I have a standing desk at the office but since I have started working from home most of the time, I found myself sitting the entire day.  After some time working reclined all the time, I decided to build my own standing desk.  I was looking for an easy to build and affordable solution and came up with the idea to use a closet organizer for the desk.  I don't fully trust my carpentry skills,  which attracted me to using shelving system that uses a track.  It made it very easy to position the heights of the the two different shelves to where they were the most ergonomic and comfortable. 
 
-<img src="/images/standing-desk-2.jpg">
+<img src="http://jdwallace12.github.io/images/standing-desk-2.jpg">
  
  *I start the morning standing and by lunch time my computer is low on batteries and place it on my other desk with my monitor to charge during lunch.  In the afternoon, I sit at my normal desk while my battery finishes charging and once fully charged, I resume standing and repeat this process throughout the day.*
 
