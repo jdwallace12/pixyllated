@@ -15,13 +15,13 @@ author-bio: I love playing outside, fort building, and skiing powder with my wif
 
 With years of being subjected to crappy and/or “girly” television shows, due to my wife holding the remote with more gusto than I do, I have learned to actually enjoy some of the shows that I would otherwise never watch.   One of the shows I have learned to appreciate is Project Runway – a Lifetime reality show that chronicles 16 designers with “a passion for fashion”, all of whom are competing to win the grand prize. Coming from a web design/development background, I found myself easily relating to all the fashion designers battling it out on the show.  Creating something from nothing is a common “thread” between both fields and they share similar processes and pitfalls.
 
-##Metaphorical Trips to Mood
+<h2>Metaphorical Trips to Mood</h2>
 
 In Project Runway you have limited time to brainstorm ideas and then you are off to the fabric store Mood, where again you have limited time to buy all the materials you need to construct your garment. The trip to Mood can really make or break a look, as the Tim Gunn likes to say.  If you pick out horrible fabric, the finished piece will suffer and you will be gifted with a witty remark from Michael Kors during judgment. 
 
 When developing a design, starting off on a component based mindset, and not a page-centric one, can really make or break your stylesheet. In terms of my own development process, I am slowly learning to transition out of the page mindset.  I have noticed I am writing fewer styles, have cleaner and more semantic markup, and am able to clock in a faster development time.  Just like Project Runway, we are often on deadlines, so it can be tempting to write a bunch of styles in order to get the job done. Similar to the designer who “overdesigns” and doesn’t “stay true to themselves”, this process typically doesn’t work. You usually end up paying for it in the long run with maintenance and specificity pains.  Taking the time to break things down into reusable components can make your life easier and have a more “cohesive look”. So, much like the trip to Mood, the way you start a new project or a redesign can really set you up for success later on.
 
-##Scrap the design for the cliché  “Make it Work Moment”
+<h2>Scrap the design for the cliché  “Make it Work Moment”</h2>
 
 During the time the contestants on the show have to construct their clothes, many designers will end up ditching their original idea to start fresh.  This seems risky, especially with the tight time constraints, but often it is the right move.  Better designs seem to flow out of you and this is the case on Project Runway as well as web design.
 
