@@ -16,7 +16,7 @@
             {% for post in site.posts limit:2 %}
             <div class="item">
                 <div class="content">
-                    <h6><a class="header" href="/pixyll/{{ post.url }}">{{ post.title }}</a></h6>
+                    <h6><a class="header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
                     <div class="description">{{ post.date | date: "%b %-d, %Y" }}</div>
                 </div>
             </div>
