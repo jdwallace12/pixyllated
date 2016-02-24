@@ -3,7 +3,7 @@ title:       Pixyllated
 email:       jdwallace12@example.com
 author:      John Wallace
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     "/pixyllated/"
+baseurl:     "/pixyllated"
 url:         "jdwallace12.github.io/pixyllated/"
 date_format: "%b %-d, %Y"
 
