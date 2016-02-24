@@ -1,6 +1,25 @@
 ---
 layout: default
 ---
+<style type="text/css">
+.text-circle-outside {
+    width: 260px;
+    height: 260px;
+    background-size: cover;
+    float: left;
+    border-radius: 50%;
+    margin-right: 3em;
+    padding: 20px;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+    transition: transform 1.5s ease;
+    will-change: transform;
+}
+.text-circle-outside:hover {
+  transform:scale(1.05);
+}
+</style>
+
 {% assign posts_count = (paginator.posts | size) %}
 
 <div class="home">
@@ -10,6 +29,10 @@ layout: default
         <div class="post py3">
           <p class="post-meta">{{ post.date | date: site.date_format }}</p>
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <div class="text-circle-outside" style="background-image: url({{post.thumbnail-image}});">
+              </div>
+            </a>
           <p class="post-summary">
             {% if post.summary %}
               {{ post.summary }}
