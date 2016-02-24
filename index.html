@@ -9,15 +9,17 @@ layout: default
     background-position: center; 
     float: left;
     border-radius: 50%;
-    margin-right: 3em;
-    padding: 20px;
+    margin-right: 2em;
     -webkit-shape-outside: circle();
     shape-outside: circle();
-    transition: transform 1.5s ease;
-    will-change: transform;
+    transition: all 1.5s ease;
+    will-change: all;
+       -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 .text-circle-outside:hover {
-  transform:scale(1.05);
+   -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 </style>
 
