@@ -25,13 +25,13 @@ layout: default
 <article class="post-content">
   {{ content }}
 </article>
-</br>
-<div class="ui tiny buttons">
-    {% if page.previous %}
-    <a class="ui labeled icon button" href="{{ site.baseurl }}{{ page.previous.url }}"><i class="left arrow icon"></i>Previous Post</a> {% endif %} {% if page.next %}
-    <a class="ui right labeled icon button" href="{{ site.baseurl }}{{ page.next.url }}"><i class="right arrow icon"></i>Next Post</a> {% endif %}
-</div>
-</br>
+<section class="section align-center">
+  <div class="ui tiny basic buttons">
+      {% if page.previous %}
+      <a class="ui labeled icon button" href="{{ site.baseurl }}{{ page.previous.url }}"><i class="left arrow icon"></i>Previous Post</a> {% endif %} {% if page.next %}
+      <a class="ui right labeled icon button" href="{{ site.baseurl }}{{ page.next.url }}"><i class="right arrow icon"></i>Next Post</a> {% endif %}
+  </div>
+</section>
 {% if site.show_sharing_icons %}
   {% include share_buttons.html %}
 {% endif %}
