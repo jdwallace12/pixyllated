@@ -1,11 +1,11 @@
-<div class="ui fluid accordion" id="blog-filter">
+<div class="ui fluid inverted accordion" id="blog-filter">
     {% for category in site.categories %}
     <div class="title filter" data-filter=".{{ category | first }}">
         <i class="dropdown icon"></i>
         <h6 style="display:inline-block; text-transform: capitalize;">{{ category | first }}</h6>
     </div>
     <div class="content inner">
-         <div class="ui list">
+         <div class="ui inverted list">
         {% for posts in category %} {% for post in posts %} {% if post.url %}
 
   <div class="item">

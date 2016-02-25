@@ -1,4 +1,4 @@
-<div class="ui right sidebar vertical menu">
+<div class="ui right inverted sidebar vertical menu">
     <div class="sidebar-container">
         <a class="green item" href="{{ site.baseurl }}/">
             <i class="home icon"></i>Home
@@ -6,14 +6,14 @@
         <a class="item" href="#">
             <i class="video envelope icon"></i>Contact
         </a>
-        <div class="ui horizontal divider">
+        <div class="ui horizontal inverted divider">
             <h6>Categories</h6>
         </div>
         {% include blog-filter.html %}
-        <div class="ui horizontal divider">
+        <div class="ui horizontal inverted divider">
             <h6>Most Recent</h6></div>
-        <div class="ui list">
-            {% for post in site.posts limit:2 %}
+        <div class="ui inverted list">
+            {% for post in site.posts limit:5 %}
             <div class="item">
                 <div class="content">
                     <h6><a class="header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h6>
@@ -22,8 +22,8 @@
             </div>
             {% endfor %}
         </div>
-        <div class="ui divider"></div>
-        <div class="ui icon compact menu" style="border:none; box-shadow:none; margin-top: -10px; margin-bottom: -30px;">
+        <div class="ui inverted divider"></div>
+        <div class="ui icon compact inverted menu" style="border:none; box-shadow:none; margin-top: -10px; margin-bottom: -30px;">
         	<a class="item">
         <i class="github icon"></i>
       </a>
