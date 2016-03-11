@@ -1,4 +1,4 @@
-<div class="ui right sidebar vertical menu">
+<div class="ui right sidebar vertical menu" style="background:#EEEEEE;">
     <div class="sidebar-container">
         <a class="green item" href="{{ site.baseurl }}/">
             <i class="home icon"></i>Home
@@ -6,10 +6,7 @@
         <a class="item" href="#">
             <i class="video envelope icon"></i>Contact
         </a>
-        <div class="ui horizontal divider">
-            <h6>Categories</h6>
-        </div>
-        {% include blog-filter.html %}
+      
         <div class="ui horizontal divider">
             <h6>Most Recent</h6></div>
         <div class="ui list">
@@ -22,6 +19,10 @@
             </div>
             {% endfor %}
         </div>
+        <div class="ui horizontal divider">
+            <h6>Categories</h6>
+        </div>
+        {% include blog-filter.html %}
         <ul class="list-horizontal">
             <li>
                 <a href="#">
