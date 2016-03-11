@@ -16,10 +16,10 @@
 .post-link .post-title {
     margin-top: 0;
     font-weight: 600;
-    color: rgba(0,0,0,.9);
+    color: rgba(0,0,0,.75);
     transition: all .5s ease;
     &:hover {
-      color: rgba(0,0,0,.85);
+      color: rgba(0,0,0,1);
     }
 }
 
