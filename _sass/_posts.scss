@@ -50,9 +50,10 @@
         -webkit-column-gap: 20px;
         text-align: justify;
         padding: 0 0 0 2%;
-        margin: 10% 0;
+        margin: 8% 0;
         border-left: 5px $light-gray solid;
         font-size: .8em;
+
         &::first-letter {
             font-weight: normal;
             font-size: 400%;
