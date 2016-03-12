@@ -16,12 +16,16 @@
 .post-link .post-title {
     margin-top: 0;
     font-weight: 600;
-    color: rgba(0,0,0,.75);
+    color: rgba(0, 0, 0, .75);
     transition: all .5s ease;
     &:hover {
-      color: rgba(0,0,0,1);
+        color: rgba(0, 0, 0, 1);
     }
 }
+
+// .post-header {
+//     max-width: 66vw;
+// }
 
 .post-footer {
     @extend .italic;
@@ -30,10 +34,11 @@
 }
 
 .post-content {
-  img {
-    padding: 4% 0;
-  }
+    img {
+        padding: 4% 0;
+    }
 }
+
 .post-footer .avatar {
     margin: 2rem 0;
     width: 100px;
@@ -58,8 +63,8 @@
     width: 260px;
     height: 260px;
     @media (max-width: 720px) {
-      width: 120px;
-      height: 120px;
+        width: 120px;
+        height: 120px;
     }
     background-size: cover;
     background-position: center;
@@ -77,4 +82,24 @@
 .text-circle-outside:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
+}
+
+.two.text.columns {
+    columns: 2;
+    -moz-column-count: 2;
+    -webkit-columns: 2;
+    @media (max-width: 720px) {
+        columns: 1;
+        -moz-column-count: 1;
+        -webkit-columns: 1;
+         font-size: 1em;
+    }
+    column-gap: 20px;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    text-align: justify;
+    padding: 1%;
+    margin: 3% 0;
+    border-left: 5px $light-gray solid;
+    font-size: .8em;
 }
