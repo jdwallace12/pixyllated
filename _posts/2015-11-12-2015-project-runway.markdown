@@ -12,9 +12,8 @@ author: John Wallace
 author-image: http://jdwallace12.github.io/images/john-wallace.jpg
 author-bio: I love playing outside, fort building, and skiing powder with my wife and dog.  Currently a front end devloper at AppNeta.
 ---
-<div class="two text columns">
+
 With years of being subjected to crappy and/or “girly” television shows, due to my wife holding the remote with more gusto than I do, I have learned to actually enjoy some of the shows that I would otherwise never watch.   One of the shows I have learned to appreciate is Project Runway – a Lifetime reality show that chronicles 16 designers with “a passion for fashion”, all of whom are competing to win the grand prize. Coming from a web design/development background, I found myself easily relating to all the fashion designers battling it out on the show.  Creating something from nothing is a common “thread” between both fields and they share similar processes and pitfalls.
-</div>
 
 <h2>Metaphorical Trips to Mood</h2>
 
