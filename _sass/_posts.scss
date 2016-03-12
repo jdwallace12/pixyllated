@@ -33,7 +33,7 @@
 }
 
 .post-content {
-     p:first-of-type {
+    p:first-of-type {
         columns: 2;
         -moz-column-count: 2;
         -webkit-columns: 2;
@@ -48,9 +48,16 @@
         -webkit-column-gap: 20px;
         text-align: justify;
         padding: 0 0 0 2%;
-        margin: 5% 0;
+        margin: 10% 0 10% 0;
         border-left: 5px $light-gray solid;
         font-size: .8em;
+        &::first-letter {
+                font-weight: normal;
+    font-size: 400%;
+    line-height: 0px;
+    vertical-align: sub;
+    letter-spacing: 4px;
+        }
     }
     img {
         padding: 4% 0;
