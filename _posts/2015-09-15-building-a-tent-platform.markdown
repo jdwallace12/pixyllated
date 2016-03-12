@@ -12,8 +12,10 @@ author: John Wallace
 author-image: http://jdwallace12.github.io/images/john-wallace.jpg
 author-bio: I love playing outside, fort building, and skiing powder with my wife and dog.  Currently a front end devloper at AppNeta.
 ---
+<div class="two text columns">
 I have always wanted to build some sort of fort at Kezar but have never gotten around to doing do since most of my time is spent lazing around the lake. The show Treehouse Masters did get me jazzed to build something on the land this year. Initially, I wanted to build a treehouse but researching treehouse construction and the costs, I decided I needed a lower budget alternative.
 Having a wall tent from lively out west, I figured to have a nice cost efficient solution until I could build something more substation.  For those who don't know a wall tent is a large canvas tent with a wood stove inside.  So I set out to build a platform that it could sit on top and be level and dry.
+</div>
 
 <h2>Scouting a Location</h2>
 
