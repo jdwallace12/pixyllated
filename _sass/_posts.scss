@@ -53,7 +53,10 @@
         margin: 8% 0;
         border-left: 5px $light-gray solid;
         font-size: .8em;
-
+        &::first-line {
+            font-variant: small-caps;
+            letter-spacing: 1px;
+        }
         &::first-letter {
             font-weight: normal;
             font-size: 400%;
@@ -66,6 +69,7 @@
         padding: 4% 0;
     }
 }
+
 .post-footer .avatar {
     margin: 2rem 0;
     width: 100px;
