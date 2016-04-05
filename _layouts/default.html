@@ -18,6 +18,13 @@
     {% endif %}
  {% include sidebar.html %}
     <div class="pusher" id="dimmer">
+        <div class="flex-wrap">
+            {% if page.thumbnail-image %}
+        <div class="left-sidebar" style="background-image: url({{page.thumbnail-image}}); background-size:cover; background-position:center;">
+            {% else %}
+            <div class="left-sidebar" style="background-image:url(http://lorempixel.com/400/1200); background-size:cover; background-position:center;">
+            {% endif %}
+        </div>
         <div class="site-wrap">
             <div class="post p2 p-responsive wrap" role="main">
                 <span class="burgWrapper" href="##" style="cursor:pointer;">
@@ -47,6 +54,7 @@
         });
         </script>
     </div>
+</div>
 </body>
 
 </html>
