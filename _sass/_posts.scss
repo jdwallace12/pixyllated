@@ -34,25 +34,7 @@
 
 .post-content {
     p:first-of-type {
-        columns: 2;
-        -moz-column-count: 2;
-        -webkit-columns: 2;
-        @media (max-width: 720px) {
-            columns: 1;
-            -moz-column-count: 1;
-            -webkit-columns: 1;
-            font-size: 1em;
-            border-left: none;
-            padding: 0;
-        }
-        column-gap: 20px;
-        -moz-column-gap: 20px;
-        -webkit-column-gap: 20px;
-        text-align: justify;
-        padding: 0 0 0 2%;
-        margin: 8% 0;
-        border-left: 5px $light-gray solid;
-        font-size: .8em;
+        margin-top: 10%;
         &::first-line {
             font-variant: small-caps;
             letter-spacing: 1px;
