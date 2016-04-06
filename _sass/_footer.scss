@@ -32,13 +32,12 @@ footer {
     font-weight: $footer-font-weight;
     padding: $footer-padding;
     text-align: center;
-     @media (max-width: 800px) {
-      display: none;
-     }
+    @media (max-width: 800px) {
+        display: none;
+    }
 }
 
 .left-sidebar {
-    border-right: 1px solid #ccc;
     width: 23vw;
     @media (max-width: 1100px) {
         display: none;
@@ -51,6 +50,16 @@ footer {
     box-flex: 0;
     position: fixed;
     height: 100vh;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+        opacity: .6;
+    }
     h3 {
         position: fixed;
     }
