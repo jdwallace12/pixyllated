@@ -26,12 +26,17 @@
 
 footer {
     background-color: $footer-bg-color;
-    border-top: $footer-border-top;
+    border-left: $footer-border-top;
     color: $footer-color;
     font-size: $footer-font-size;
     font-weight: $footer-font-weight;
     padding: $footer-padding;
     text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+      background: #f7f7f7;
+    }
     @media (max-width: 800px) {
         display: none;
     }

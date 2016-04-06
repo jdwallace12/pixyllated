@@ -41,7 +41,7 @@
         $(document).ready(function() {
             $('#blog-filter').accordion();
 
-            $('.burgWrapper').on('click', function() {
+            $('.burgWrapper, footer').on('click', function() {
                 $('.ui.sidebar').sidebar('toggle');
                 $('.burg').toggleClass('activeBurg');
             });
