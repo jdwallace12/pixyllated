@@ -35,7 +35,7 @@ footer {
     cursor: pointer;
     transition: all .3s ease;
     &:hover {
-      background: #f7f7f7;
+        background: #f7f7f7;
     }
     @media (max-width: 800px) {
         display: none;
@@ -47,6 +47,9 @@ footer {
     @media (max-width: 1100px) {
         display: none;
     }
+    background-size:cover;
+    background-position:center;
+    background-image: url(../images/space.jpg);
     padding: 2%;
     -ms-flex: 0 100px;
     -webkit-box-flex: 0;
@@ -62,7 +65,10 @@ footer {
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+        background-image: -webkit-linear-gradient(to left, #000000, #434343);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(to left, #000000, #434343);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         opacity: .6;
     }
     h3 {
