@@ -16,7 +16,7 @@
     -webkit-flex: 1;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-    margin-left: 27%;
+    margin-left: 33vw;
     padding: 0 2%;
     @media (max-width: 1100px) {
         margin-left: 0%;
@@ -43,7 +43,7 @@ footer {
 }
 
 .left-sidebar {
-    width: 23vw;
+    width: 29vw;
     @media (max-width: 1100px) {
         display: none;
     }
@@ -78,7 +78,7 @@ footer {
 
 .overlay {
     position: absolute;
-    width: 27vw;
+    width: 33vw;
     height: 100vh;
     top: 0;
     left: 0;
