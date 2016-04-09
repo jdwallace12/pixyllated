@@ -21,10 +21,13 @@
         <div class="flex-wrap">
             {% if page.thumbnail-image %}
         <div class="left-sidebar" style="background-image: url({{page.featured-image}}); background-size:cover; background-position:center;">
+            <div class="overlay">
             {% else %}
             <div class="left-sidebar">
+                <div class="overlay">
             {% endif %}
         </div>
+    </div>
         <div class="site-wrap">
             <div class="post p2 p-responsive wrap" role="main">
                 <span class="burgWrapper" href="##" style="cursor:pointer;">
