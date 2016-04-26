@@ -99,16 +99,23 @@ footer {
     top: 45vh;
     left: 27px;
     z-index: 9;
-    color: #fff;
+    color: rgba(255,255,255,0.8);
     max-width: 28vw;
     @media (max-width: 1100px) {
         display: none;
     }
     .post-meta {
-        color: #fff;
+        color: rgba(255,255,255,0.8);
     }
     p {
-        color: #fff;
+        color: rgba(255,255,255,0.8);
+    }
+    .ui.button {
+        color: rgba(255,255,255,0.8)!important;
+        border-color: rgba(255,255,255,0.8);
+        &:hover {
+            color: #333!important;
+        }
     }
 }
 
