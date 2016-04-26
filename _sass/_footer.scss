@@ -90,6 +90,26 @@ footer {
     // background-image: url("http://www.transparenttextures.com/patterns/grid-noise.png");
 }
 
+.scroll-title {
+    display: none;
+}
+
+.scroll-title.scrolled {
+    display: block;
+    position: fixed;
+    top: 60vh;
+    left: 27px;
+    z-index: 9;
+    color: #fff;
+    max-width: 28vw;
+       @media (max-width: 1100px) {
+        display: none;
+    }
+     .post-meta {
+        color: #fff;
+    }
+}
+
 // .site-wrap {
 //     -ms-flex: 1;
 //     -webkit-box-flex: 1;

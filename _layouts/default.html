@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <body class="site{% if site.animated %} animated fade-in-down{% endif %}">
     {% if site.facebook_comments %}
     <div id="fb-root"></div>
@@ -16,48 +17,57 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
     {% endif %}
- {% include sidebar.html %}
+    <div class="scroll-title">
+        <h2>{{ page.title }}</h2>
+        <div class="post-meta">{{ page.date | date: site.date_format }}</div>
+          <section style="margin-top: 50px;">
+        {% if page.previous %}
+            <a class="ui mini inverted button" href="{{ site.baseurl }}{{ page.previous.url }}"><i class="left arrow icon"></i>Previous Post</a> {% endif %} {% if page.next %}
+            <a class="ui mini inverted button" href="{{ site.baseurl }}{{ page.next.url }}"><i class="right arrow icon"></i>Next Post</a> {% endif %}
+        </section>
+    </div>
+    {% include sidebar.html %}
     <div class="pusher" id="dimmer">
         <div class="flex-wrap">
             {% if page.thumbnail-image %}
-        <div class="left-sidebar" style="background-image: url({{page.featured-image}}); background-size:cover; background-position:center;">
-            <div class="overlay">
-            {% else %}
-            <div class="left-sidebar">
+            <div class="left-sidebar" style="background-image: url({{page.featured-image}}); background-size:cover; background-position:center;">
                 <div class="overlay">
-            {% endif %}
-        </div>
-    </div>
-        <div class="site-wrap">
-            <div class="post p2 p-responsive wrap" role="main">
-                <span class="burgWrapper" href="##" style="cursor:pointer;">
+                    {% else %}
+                    <div class="left-sidebar">
+                        <div class="overlay">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="site-wrap">
+                        <div class="post p2 p-responsive wrap" role="main">
+                            <span class="burgWrapper" href="##" style="cursor:pointer;">
                     <div class="burg"></div>
                 </span>
-                <div class="measure">
-                    {{ content }}
+                            <div class="measure">
+                                {{ content }}
+                            </div>
+                        </div>
+                    </div>
+                    {% include footer.html %}
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+                    <script>
+                    $(document).ready(function() {
+                        $('#blog-filter').accordion();
+
+                        $('.burgWrapper, footer').on('click', function() {
+                            $('.ui.sidebar').sidebar('toggle');
+                            $('.burg').toggleClass('activeBurg');
+                        });
+
+                        $('.ui.sidebar').sidebar({
+                            onHide: function() {
+                                $('.burg').toggleClass('activeBurg');
+                            }
+                        });
+                    });
+                    </script>
                 </div>
             </div>
-        </div>
-        {% include footer.html %}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
-        <script>
-        $(document).ready(function() {
-            $('#blog-filter').accordion();
-
-            $('.burgWrapper, footer').on('click', function() {
-                $('.ui.sidebar').sidebar('toggle');
-                $('.burg').toggleClass('activeBurg');
-            });
-
-            $('.ui.sidebar').sidebar({
-                onHide: function() {
-                    $('.burg').toggleClass('activeBurg');
-                }
-            });
-        });
-        </script>
-    </div>
-</div>
 </body>
 
 </html>
