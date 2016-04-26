@@ -85,7 +85,8 @@ footer {
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 1.5s ease-in-out;
     // background-image: url("http://www.transparenttextures.com/patterns/grid-noise.png");
 }
 
