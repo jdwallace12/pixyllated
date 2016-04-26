@@ -18,9 +18,18 @@
     </script>
     {% endif %}
     <div class="scroll-title">
+         <p>Currently Reading:</p>
         <h2>{{ page.title }}</h2>
         <div class="post-meta">{{ page.date | date: site.date_format }}</div>
-          <section style="margin-top: 50px;">
+        {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %} {% if minutes == 0 %} {% assign minutes = 1 %} {% endif %}
+         <span class="post-meta small">
+  {% if page.minutes %}
+    {{ page.minutes }} {{ site.text.post.minute_read }}
+  {% else %}
+    {{ minutes }} {{ site.text.post.minute_read }}
+  {% endif %}
+  </span>
+          <section style="margin-top: 100px;">
         {% if page.previous %}
             <a class="ui mini inverted button" href="{{ site.baseurl }}{{ page.previous.url }}"><i class="left arrow icon"></i>Previous Post</a> {% endif %} {% if page.next %}
             <a class="ui mini inverted button" href="{{ site.baseurl }}{{ page.next.url }}"><i class="right arrow icon"></i>Next Post</a> {% endif %}
